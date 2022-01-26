@@ -192,7 +192,7 @@
         e.preventDefault();
         // Ketika tekan tombol kirim
         // Menampilkan tombol loading dan menghilangkan tombol kirim
-        btnLoading.classList.toggle("d-nocodene"); // di dalam button Loading mengecek ada tidak di class listnya bernama d-none
+        btnLoading.classList.toggle("d-none"); // di dalam button Loading mengecek ada tidak di class listnya bernama d-none
         btnKirim.classList.toggle("d-none"); // di dalam button Kirim mengecek ada tidak di class listnya bernama d-none
 
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
